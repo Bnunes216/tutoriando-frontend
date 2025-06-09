@@ -1,13 +1,16 @@
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Logo from './Logo';
 import SocialButton from './SocialButton';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
+import { useAuth } from '@/contexts/AuthContext';
 
 const Register = () => {
+  const navigate = useNavigate();
+  const { register } = useAuth();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,12 +29,14 @@ const Register = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Dados do formulário:', formData);
-    // Aqui você implementaria a lógica de cadastro
+    register(formData.name, formData.email, formData.password);
+    navigate('/');
   };
 
   const handleSocialLogin = (provider: 'google' | 'facebook') => {
     console.log(`Login com ${provider}`);
-    // Aqui você implementaria a lógica de login social
+    register('Usuário Social', 'usuario@exemplo.com', 'senha');
+    navigate('/');
   };
 
   return (

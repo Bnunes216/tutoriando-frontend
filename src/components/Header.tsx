@@ -3,12 +3,19 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from './Logo';
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { useAuth } from '@/contexts/AuthContext';
 
 const Header = () => {
   const location = useLocation();
+  const { isAuthenticated, user, logout } = useAuth();
 
   const isActive = (path: string) => {
     return location.pathname === path;
+  };
+
+  const handleLogout = () => {
+    logout();
   };
 
   return (
@@ -54,21 +61,36 @@ const Header = () => {
             </Link>
           </nav>
 
-          {/* Auth Buttons */}
+          {/* Auth Section */}
           <div className="flex items-center space-x-4">
-            <Link to="/login">
-              <Button
-                variant="outline"
-                className="border-tutoriando-blue-dark text-tutoriando-blue-dark hover:bg-tutoriando-blue-dark hover:text-white font-inter"
-              >
-                Sign In
-              </Button>
-            </Link>
-            <Link to="/">
-              <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-gradient-end text-white font-inter">
-                Registrar
-              </Button>
-            </Link>
+            {isAuthenticated ? (
+              <div className="flex items-center space-x-3">
+                <span className="text-sm text-tutoriando-text-dark font-inter">
+                  Olá, {user?.name}
+                </span>
+                <Avatar className="w-8 h-8 cursor-pointer" onClick={handleLogout}>
+                  <AvatarFallback className="bg-tutoriando-blue-dark text-white text-sm font-medium">
+                    {user?.name?.charAt(0) || 'U'}
+                  </AvatarFallback>
+                </Avatar>
+              </div>
+            ) : (
+              <>
+                <Link to="/login">
+                  <Button
+                    variant="outline"
+                    className="border-tutoriando-blue-dark text-tutoriando-blue-dark hover:bg-tutoriando-blue-dark hover:text-white font-inter"
+                  >
+                    Sign In
+                  </Button>
+                </Link>
+                <Link to="/register">
+                  <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-gradient-end text-white font-inter">
+                    Registrar
+                  </Button>
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </div>
