@@ -7,11 +7,11 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 
-const Register = () => {
+const Login = () => {
   const [formData, setFormData] = useState({
-    name: '',
     email: '',
     password: '',
+    rememberMe: false,
     agreeToTerms: false
   });
 
@@ -25,8 +25,8 @@ const Register = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Dados do formulário:', formData);
-    // Aqui você implementaria a lógica de cadastro
+    console.log('Dados do login:', formData);
+    // Aqui você implementaria a lógica de login
   };
 
   const handleSocialLogin = (provider: 'google' | 'facebook') => {
@@ -43,26 +43,14 @@ const Register = () => {
           
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-2 font-inter">
-              Crie sua conta
+              Login
             </h2>
             <p className="text-tutoriando-text-light font-inter">
-              Junte-se à nossa comunidade de aprendizado
+              Acesse sua conta e continue aprendendo
             </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <Input
-                type="text"
-                name="name"
-                placeholder="Nome completo"
-                value={formData.name}
-                onChange={handleInputChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-tutoriando-blue-dark focus:border-transparent font-inter"
-                required
-              />
-            </div>
-
             <div>
               <Input
                 type="email"
@@ -87,22 +75,42 @@ const Register = () => {
               />
             </div>
 
-            <div className="flex items-start gap-3">
-              <Checkbox
-                id="terms"
-                checked={formData.agreeToTerms}
-                onCheckedChange={(checked) => 
-                  setFormData(prev => ({ ...prev, agreeToTerms: checked as boolean }))
-                }
-                className="mt-1"
-              />
-              <label htmlFor="terms" className="text-sm text-tutoriando-text-light font-inter leading-relaxed">
-                Concordo com os{' '}
-                <a href="#" className="text-tutoriando-blue-dark hover:underline">
-                  termos e condições
-                </a>{' '}
-                da plataforma
-              </label>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Checkbox
+                    id="rememberMe"
+                    checked={formData.rememberMe}
+                    onCheckedChange={(checked) => 
+                      setFormData(prev => ({ ...prev, rememberMe: checked as boolean }))
+                    }
+                  />
+                  <label htmlFor="rememberMe" className="text-sm text-tutoriando-text-light font-inter">
+                    Manter-me conectado
+                  </label>
+                </div>
+                <a href="#" className="text-sm text-tutoriando-blue-dark hover:underline font-inter">
+                  Esqueceu sua senha?
+                </a>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Checkbox
+                  id="terms"
+                  checked={formData.agreeToTerms}
+                  onCheckedChange={(checked) => 
+                    setFormData(prev => ({ ...prev, agreeToTerms: checked as boolean }))
+                  }
+                  className="mt-1"
+                />
+                <label htmlFor="terms" className="text-sm text-tutoriando-text-light font-inter leading-relaxed">
+                  Concordo com os{' '}
+                  <a href="#" className="text-tutoriando-blue-dark hover:underline">
+                    termos e condições
+                  </a>{' '}
+                  da plataforma
+                </label>
+              </div>
             </div>
 
             <Button
@@ -110,7 +118,7 @@ const Register = () => {
               disabled={!formData.agreeToTerms}
               className="w-full bg-tutoriando-blue-dark hover:bg-tutoriando-blue-gradient-end text-white py-3 rounded-lg font-medium transition-colors duration-200 font-inter disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Criar conta
+              Entrar
             </Button>
           </form>
 
@@ -139,9 +147,9 @@ const Register = () => {
           </div>
 
           <p className="mt-8 text-center text-tutoriando-text-light font-inter">
-            Já tem uma conta?{' '}
-            <Link to="/login" className="text-tutoriando-blue-dark hover:underline font-medium">
-              Faça login
+            Não tem uma conta?{' '}
+            <Link to="/" className="text-tutoriando-blue-dark hover:underline font-medium">
+              Criar conta
             </Link>
           </p>
         </div>
@@ -227,4 +235,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;
