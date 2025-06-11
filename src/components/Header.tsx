@@ -24,7 +24,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png" 
+              src="/lovable-uploads/f4f5a461-b655-4ad3-8b46-c3d0ab2e67e6.png" 
               alt="Tutoriando" 
               className="h-10 w-auto"
             />
@@ -82,7 +82,7 @@ const Header = () => {
                 <Link to="/login">
                   <Button
                     variant="outline"
-                    className="border-white text-white hover:bg-white hover:text-tutoriando-text-dark font-inter"
+                    className="border-white text-tutoriando-text-dark bg-white hover:bg-gray-100 font-inter"
                   >
                     Sign In
                   </Button>
