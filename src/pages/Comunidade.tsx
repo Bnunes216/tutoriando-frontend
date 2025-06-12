@@ -79,7 +79,7 @@ const Comunidade = () => {
           </div>
 
           {/* Forum Section */}
-          <section className="mb-16">
+          <section id="forum" className="mb-16">
             <div className="flex items-center gap-4 mb-8">
               <div className="flex items-center gap-3">
                 <MessageSquare className="w-8 h-8 text-tutoriando-blue-dark" />
@@ -105,7 +105,7 @@ const Comunidade = () => {
           </section>
 
           {/* Game Rank Section */}
-          <section className="mb-16">
+          <section id="ranking" className="mb-16">
             <div className="flex items-center gap-4 mb-8">
               <Trophy className="w-8 h-8 text-tutoriando-blue-dark" />
               <h2 className="text-3xl font-bold text-tutoriando-text-dark font-inter">
@@ -121,7 +121,7 @@ const Comunidade = () => {
           </section>
 
           {/* Support Section */}
-          <section className="mb-16">
+          <section id="suporte" className="mb-16">
             <div className="flex items-center gap-4 mb-8">
               <HelpCircle className="w-8 h-8 text-tutoriando-blue-dark" />
               <h2 className="text-3xl font-bold text-tutoriando-text-dark font-inter">

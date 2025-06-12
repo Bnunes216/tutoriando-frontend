@@ -12,7 +12,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-1">
             <div className="text-white mb-4">
-              <Logo />
+              <img 
+                src="/lovable-uploads/9b924697-4d9c-40d6-93e6-b4bd59977b96.png" 
+                alt="Tutoriando" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-gray-300 text-sm mb-6 font-inter">
               Conectando estudantes a conhecimento de qualidade através de tutoria personalizada.
@@ -40,24 +44,14 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 font-inter">Pesquisa</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/tutores" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
-                  Encontrar Tutores
-                </Link>
+                <a href="/#tutores" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
+                  Tutores
+                </a>
               </li>
               <li>
-                <Link to="/materias" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
-                  Matérias
-                </Link>
-              </li>
-              <li>
-                <Link to="/avaliacoes" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
-                  Avaliações
-                </Link>
-              </li>
-              <li>
-                <Link to="/precos" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
-                  Preços
-                </Link>
+                <a href="/#noticias" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
+                  Últimas Notícias
+                </a>
               </li>
             </ul>
           </div>
@@ -67,24 +61,14 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 font-inter">Meus Cursos</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/cursos/ativos" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
-                  Cursos Ativos
-                </Link>
+                <a href="/cursos#timeline" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
+                  Timeline dos Cursos
+                </a>
               </li>
               <li>
-                <Link to="/cursos/concluidos" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
-                  Concluídos
-                </Link>
-              </li>
-              <li>
-                <Link to="/progresso" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
-                  Meu Progresso
-                </Link>
-              </li>
-              <li>
-                <Link to="/certificados" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
-                  Certificados
-                </Link>
+                <a href="/cursos#aulas-ao-vivo" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
+                  Aulas ao Vivo
+                </a>
               </li>
             </ul>
           </div>
@@ -94,24 +78,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 font-inter">Comunidade</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/forum" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
-                  Fórum
-                </Link>
+                <a href="/comunidade#forum" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
+                  Fórum de Debates
+                </a>
               </li>
               <li>
-                <Link to="/eventos" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
-                  Eventos
-                </Link>
+                <a href="/comunidade#ranking" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
+                  Game-rank
+                </a>
               </li>
               <li>
-                <Link to="/blog" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="/suporte" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
+                <a href="/comunidade#suporte" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-inter">
                   Suporte
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

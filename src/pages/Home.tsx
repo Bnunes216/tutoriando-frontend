@@ -2,157 +2,239 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import NewsCard from '@/components/NewsCard';
 import TutorCard from '@/components/TutorCard';
+import NewsCard from '@/components/NewsCard';
+import { Search, Star, Users, BookOpen, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Search } from 'lucide-react';
 
 const Home = () => {
-  // Mock data para demonstração
-  const newsData = [
+  const tutors = [
     {
-      title: "Nova Metodologia de Ensino",
-      description: "Conheça as novas técnicas de aprendizado adaptativo que estão revolucionando a educação online.",
-      image: "Metodologia",
-      date: "15 de Junho, 2024"
+      id: 1,
+      name: "Dr. Ana Silva",
+      subject: "Matemática",
+      rating: 4.9,
+      students: 150,
+      price: 80,
+      avatar: "AS",
+      description: "Especialista em Cálculo e Álgebra Linear com 10 anos de experiência."
     },
     {
-      title: "Tutores Certificados",
-      description: "Agora todos os nossos tutores passam por um processo rigoroso de certificação para garantir qualidade.",
-      image: "Certificação",
-      date: "12 de Junho, 2024"
+      id: 2,
+      name: "Prof. Carlos Santos",
+      subject: "Física",
+      rating: 4.8,
+      students: 120,
+      price: 75,
+      avatar: "CS",
+      description: "Doutor em Física Quântica, ensino dinâmico e didático."
     },
     {
-      title: "Novo Curso de Matemática",
-      description: "Lançamos um curso completo de matemática avançada com exercícios práticos e resolução de problemas.",
-      image: "Matemática",
-      date: "10 de Junho, 2024"
+      id: 3,
+      name: "Dra. Maria Oliveira",
+      subject: "Química",
+      rating: 4.9,
+      students: 200,
+      price: 70,
+      avatar: "MO",
+      description: "Química Orgânica e Inorgânica, metodologia personalizada."
     }
   ];
 
-  const tutorsData = [
+  const news = [
     {
-      name: "Ana Silva",
-      subject: "Matemática e Física",
-      rating: 4.9,
-      isOnline: true,
-      avatar: "AS",
-      experience: "5 anos"
+      id: 1,
+      title: "Nova Metodologia de Ensino Online",
+      description: "Descubra como nossa nova abordagem está revolucionando o aprendizado digital.",
+      date: "15 de Dezembro, 2024",
+      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     },
     {
-      name: "Carlos Mendes",
-      subject: "Programação",
-      rating: 4.8,
-      isOnline: true,
-      avatar: "CM",
-      experience: "3 anos"
+      id: 2,
+      title: "Expansão para Novos Cursos",
+      description: "Anunciamos a chegada de novos cursos em áreas como Design e Marketing Digital.",
+      date: "12 de Dezembro, 2024",
+      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     },
     {
-      name: "Marina Santos",
-      subject: "Idiomas",
-      rating: 4.7,
-      isOnline: false,
-      avatar: "MS",
-      experience: "7 anos"
-    },
-    {
-      name: "João Oliveira",
-      subject: "História e Geografia",
-      rating: 4.9,
-      isOnline: true,
-      avatar: "JO",
-      experience: "4 anos"
+      id: 3,
+      title: "Parcerias com Universidades",
+      description: "Firmamos parcerias estratégicas com as principais universidades do país.",
+      date: "10 de Dezembro, 2024",
+      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-tutoriando-beige">
       <Header />
       
-      {/* Hero Section */}
-      <section className="bg-tutoriando-beige py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-tutoriando-text-dark mb-6 font-inter">
-              Bem-vindo ao Tutoriando
-            </h1>
-            <p className="text-xl text-tutoriando-text-light mb-8 max-w-3xl mx-auto font-inter">
-              Conecte-se com os melhores tutores e acelere seu aprendizado com aulas personalizadas
-            </p>
-            
-            {/* Search Bar */}
-            <div className="max-w-md mx-auto relative">
-              <Input
-                type="text"
-                placeholder="Buscar matérias, tutores..."
-                className="pl-12 pr-4 py-3 text-base border-gray-300 rounded-lg focus:ring-2 focus:ring-tutoriando-blue-dark focus:border-transparent font-inter"
-              />
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+      <main>
+        {/* Hero Section */}
+        <section className="pt-20 pb-16 bg-gradient-to-br from-tutoriando-blue-dark to-tutoriando-blue-gradient-end text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 font-inter leading-tight">
+                  Aprenda com os Melhores 
+                  <span className="text-tutoriando-beige"> Tutores</span>
+                </h1>
+                <p className="text-xl mb-8 text-gray-200 font-inter">
+                  Conecte-se com tutores especializados e acelere seu aprendizado com aulas personalizadas
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button className="bg-white text-tutoriando-text-dark hover:bg-gray-100 font-inter text-lg px-8 py-3">
+                    Encontrar Tutor
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    className="border-white text-white hover:bg-white hover:text-tutoriando-text-dark font-inter text-lg px-8 py-3"
+                  >
+                    Saiba Mais
+                  </Button>
+                </div>
+              </div>
+              
+              <div className="flex justify-center">
+                <div className="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
+                  <div className="text-8xl">🎓</div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Latest News Section */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-4 font-inter">
-              Últimas Notícias
-            </h2>
-            <p className="text-tutoriando-text-light font-inter">
-              Fique por dentro das novidades da plataforma
-            </p>
+        {/* Features Section */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-4 font-inter">
+                Por que escolher o Tutoriando?
+              </h2>
+              <p className="text-lg text-tutoriando-text-light font-inter max-w-2xl mx-auto">
+                Oferecemos a melhor experiência de aprendizado personalizado
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center p-6">
+                <div className="w-16 h-16 bg-tutoriando-blue-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Search className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-tutoriando-text-dark mb-2 font-inter">
+                  Encontre o Tutor Ideal
+                </h3>
+                <p className="text-tutoriando-text-light font-inter">
+                  Sistema inteligente de matching que conecta você ao tutor perfeito para suas necessidades
+                </p>
+              </div>
+              
+              <div className="text-center p-6">
+                <div className="w-16 h-16 bg-tutoriando-blue-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Star className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-tutoriando-text-dark mb-2 font-inter">
+                  Qualidade Garantida
+                </h3>
+                <p className="text-tutoriando-text-light font-inter">
+                  Todos os tutores são avaliados e certificados, garantindo a melhor experiência de aprendizado
+                </p>
+              </div>
+              
+              <div className="text-center p-6">
+                <div className="w-16 h-16 bg-tutoriando-blue-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-tutoriando-text-dark mb-2 font-inter">
+                  Comunidade Ativa
+                </h3>
+                <p className="text-tutoriando-text-light font-inter">
+                  Participe de uma comunidade engajada com fóruns, eventos e networking
+                </p>
+              </div>
+            </div>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {newsData.map((news, index) => (
-              <NewsCard
-                key={index}
-                title={news.title}
-                description={news.description}
-                image={news.image}
-                date={news.date}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Tutors Section */}
-      <section className="py-16 bg-gradient-to-br from-tutoriando-blue-gradient-start to-tutoriando-blue-gradient-end">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4 font-inter">
-              Nossos Tutores em Destaque
+        {/* Tutors Section */}
+        <section id="tutores" className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-4 font-inter">
+                Nossos Melhores Tutores
+              </h2>
+              <p className="text-lg text-tutoriando-text-light font-inter">
+                Conheça alguns dos profissionais mais qualificados da nossa plataforma
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {tutors.map((tutor) => (
+                <TutorCard key={tutor.id} {...tutor} />
+              ))}
+            </div>
+            
+            <div className="text-center mt-8">
+              <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-dark/90 text-white font-inter">
+                Ver Todos os Tutores
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* News Section */}
+        <section id="noticias" className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-4 font-inter">
+                Últimas Notícias
+              </h2>
+              <p className="text-lg text-tutoriando-text-light font-inter">
+                Fique por dentro das novidades e atualizações da plataforma
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {news.map((article) => (
+                <NewsCard key={article.id} {...article} />
+              ))}
+            </div>
+            
+            <div className="text-center mt-8">
+              <Button variant="outline" className="border-tutoriando-blue-dark text-tutoriando-blue-dark font-inter">
+                Ver Todas as Notícias
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-tutoriando-blue-dark text-white">
+          <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold mb-4 font-inter">
+              Pronto para começar sua jornada de aprendizado?
             </h2>
-            <p className="text-white/90 font-inter">
-              Conheça alguns dos nossos melhores educadores
+            <p className="text-xl mb-8 text-gray-200 font-inter">
+              Junte-se a milhares de estudantes que já transformaram seus estudos com nossa plataforma
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-white text-tutoriando-text-dark hover:bg-gray-100 font-inter text-lg px-8 py-3">
+                Começar Agora
+                <BookOpen className="ml-2 w-5 h-5" />
+              </Button>
+              <Button 
+                variant="outline" 
+                className="border-white text-white hover:bg-white hover:text-tutoriando-text-dark font-inter text-lg px-8 py-3"
+              >
+                Falar com Suporte
+              </Button>
+            </div>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {tutorsData.map((tutor, index) => (
-              <TutorCard
-                key={index}
-                name={tutor.name}
-                subject={tutor.subject}
-                rating={tutor.rating}
-                isOnline={tutor.isOnline}
-                avatar={tutor.avatar}
-                experience={tutor.experience}
-              />
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <Button className="bg-white text-tutoriando-blue-dark hover:bg-gray-100 font-inter px-8 py-3">
-              Ver Todos os Tutores
-            </Button>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <Footer />
     </div>
