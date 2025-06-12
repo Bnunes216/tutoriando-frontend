@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -12,25 +11,19 @@ const MeusCursos = () => {
     {
       id: 1,
       title: "Cálculo Diferencial e Integral",
-      instructor: "Dr. Ana Silva",
-      progress: 75,
-      duration: "12 semanas",
+      category: "Matemática",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     },
     {
       id: 2,
       title: "Física Quântica Avançada",
-      instructor: "Prof. Carlos Santos",
-      progress: 45,
-      duration: "16 semanas",
+      category: "Física",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     },
     {
       id: 3,
       title: "Química Orgânica",
-      instructor: "Dra. Maria Oliveira",
-      progress: 90,
-      duration: "10 semanas",
+      category: "Química",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     }
   ];
@@ -39,57 +32,58 @@ const MeusCursos = () => {
     {
       id: 1,
       title: "Resolução de Limites",
-      instructor: "Dr. Ana Silva",
-      date: "Hoje",
-      time: "14:00",
-      participants: 25
+      tutor: "Dr. Ana Silva",
+      participants: ["AS", "JP", "IC"],
+      isLive: true
     },
     {
       id: 2,
       title: "Mecânica Quântica - Fundamentos",
-      instructor: "Prof. Carlos Santos",
-      date: "Amanhã",
-      time: "16:00",
-      participants: 18
+      tutor: "Prof. Carlos Santos",
+      participants: ["CS", "RL", "MO"],
+      isLive: false
     },
     {
       id: 3,
       title: "Reações de Substituição",
-      instructor: "Dra. Maria Oliveira",
-      date: "15/12",
-      time: "15:30",
-      participants: 22
+      tutor: "Dra. Maria Oliveira",
+      participants: ["MO", "AS", "JP", "IC", "RL"],
+      isLive: false
     }
   ];
 
   const timelineEvents = [
     {
       id: 1,
+      icon: "📝",
+      date: "20/12",
+      time: "23:59",
       title: "Entrega do Projeto Final - Cálculo",
-      date: "20/12/2024",
-      type: "assignment" as const,
-      completed: false
+      description: "Prazo final para entrega do projeto de cálculo diferencial"
     },
     {
       id: 2,
+      icon: "📊",
+      date: "18/12",
+      time: "14:00",
       title: "Prova - Física Quântica",
-      date: "18/12/2024",
-      type: "exam" as const,
-      completed: false
+      description: "Avaliação sobre os fundamentos da física quântica"
     },
     {
       id: 3,
+      icon: "🎥",
+      date: "15/12",
+      time: "15:30",
       title: "Aula ao Vivo - Química Orgânica",
-      date: "15/12/2024",
-      type: "class" as const,
-      completed: true
+      description: "Discussão sobre reações de substituição nucleofílica"
     },
     {
       id: 4,
+      icon: "🔬",
+      date: "12/12",
+      time: "10:00",
       title: "Workshop - Métodos Numéricos",
-      date: "12/12/2024",
-      type: "workshop" as const,
-      completed: true
+      description: "Workshop prático sobre aplicação de métodos numéricos"
     }
   ];
 

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -14,30 +13,27 @@ const Home = () => {
       name: "Dr. Ana Silva",
       subject: "Matemática",
       rating: 4.9,
-      students: 150,
-      price: 80,
+      isOnline: true,
       avatar: "AS",
-      description: "Especialista em Cálculo e Álgebra Linear com 10 anos de experiência."
+      experience: "10 anos"
     },
     {
       id: 2,
       name: "Prof. Carlos Santos",
       subject: "Física",
       rating: 4.8,
-      students: 120,
-      price: 75,
+      isOnline: false,
       avatar: "CS",
-      description: "Doutor em Física Quântica, ensino dinâmico e didático."
+      experience: "8 anos"
     },
     {
       id: 3,
       name: "Dra. Maria Oliveira",
       subject: "Química",
       rating: 4.9,
-      students: 200,
-      price: 70,
+      isOnline: true,
       avatar: "MO",
-      description: "Química Orgânica e Inorgânica, metodologia personalizada."
+      experience: "12 anos"
     }
   ];
 
