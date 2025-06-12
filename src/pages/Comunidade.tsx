@@ -12,8 +12,8 @@ const Comunidade = () => {
     {
       id: 1,
       author: "Ana Silva",
-      title: "Dúvidas sobre Cálculo Diferencial",
-      description: "Estou com dificuldades para entender os conceitos de limite. Alguém pode me ajudar com exercícios práticos?",
+      title: "Dúvidas sobre Algoritmos de Ordenação",
+      description: "Estou com dificuldades para entender a complexidade do quicksort. Alguém pode me ajudar com exemplos práticos?",
       comments: 12,
       likes: 8,
       avatar: "AS"
@@ -21,8 +21,8 @@ const Comunidade = () => {
     {
       id: 2,
       author: "Carlos Santos",
-      title: "Dicas de Estudo para Física Quântica",
-      description: "Compartilho aqui algumas técnicas que me ajudaram muito no aprendizado de física quântica...",
+      title: "Dicas para Desenvolvimento React",
+      description: "Compartilho aqui algumas técnicas avançadas que me ajudaram muito no desenvolvimento com React e TypeScript...",
       comments: 5,
       likes: 15,
       avatar: "CS"
@@ -30,8 +30,8 @@ const Comunidade = () => {
     {
       id: 3,
       author: "Maria Oliveira",
-      title: "Grupo de Estudos - Literatura Brasileira",
-      description: "Estou formando um grupo de estudos sobre literatura brasileira. Quem tem interesse?",
+      title: "Grupo de Estudos - Python e Machine Learning",
+      description: "Estou formando um grupo de estudos sobre Python aplicado à ciência de dados. Quem tem interesse?",
       comments: 18,
       likes: 22,
       avatar: "MO"
@@ -71,10 +71,10 @@ const Comunidade = () => {
           {/* Page Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-tutoriando-text-dark mb-4 font-inter">
-              Comunidade
+              Comunidade Tech
             </h1>
             <p className="text-lg text-tutoriando-text-light font-inter max-w-2xl mx-auto">
-              Conecte-se com outros estudantes, participe de discussões e acompanhe seu progresso
+              Conecte-se com outros desenvolvedores, participe de discussões sobre programação e acompanhe seu progresso
             </p>
           </div>
 
@@ -84,7 +84,7 @@ const Comunidade = () => {
               <div className="flex items-center gap-3">
                 <MessageSquare className="w-8 h-8 text-tutoriando-blue-dark" />
                 <h2 className="text-3xl font-bold text-tutoriando-text-dark font-inter">
-                  Fórum de Debates
+                  Fórum de Desenvolvedores
                 </h2>
               </div>
             </div>
@@ -98,7 +98,7 @@ const Comunidade = () => {
               
               <div className="flex justify-center lg:justify-end">
                 <div className="w-64 h-64 bg-gradient-to-br from-tutoriando-blue-dark to-tutoriando-blue-gradient-end rounded-full flex items-center justify-center">
-                  <div className="text-6xl">🎓</div>
+                  <div className="text-6xl">💻</div>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ const Comunidade = () => {
             <div className="flex items-center gap-4 mb-8">
               <Trophy className="w-8 h-8 text-tutoriando-blue-dark" />
               <h2 className="text-3xl font-bold text-tutoriando-text-dark font-inter">
-                Game-rank
+                Ranking de Código
               </h2>
             </div>
             
@@ -125,7 +125,7 @@ const Comunidade = () => {
             <div className="flex items-center gap-4 mb-8">
               <HelpCircle className="w-8 h-8 text-tutoriando-blue-dark" />
               <h2 className="text-3xl font-bold text-tutoriando-text-dark font-inter">
-                Suporte
+                Suporte Técnico
               </h2>
             </div>
             

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -10,20 +11,20 @@ const MeusCursos = () => {
   const courses = [
     {
       id: 1,
-      title: "Cálculo Diferencial e Integral",
-      category: "Matemática",
+      title: "Estruturas de Dados e Algoritmos",
+      category: "Ciência da Computação",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     },
     {
       id: 2,
-      title: "Física Quântica Avançada",
-      category: "Física",
+      title: "Desenvolvimento Web Full Stack",
+      category: "Análise e Desenvolvimento",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     },
     {
       id: 3,
-      title: "Química Orgânica",
-      category: "Química",
+      title: "Engenharia de Software",
+      category: "Engenharia da Computação",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     }
   ];
@@ -31,21 +32,21 @@ const MeusCursos = () => {
   const liveClasses = [
     {
       id: 1,
-      title: "Resolução de Limites",
+      title: "Algoritmos de Ordenação",
       tutor: "Dr. Ana Silva",
       participants: ["AS", "JP", "IC"],
       isLive: true
     },
     {
       id: 2,
-      title: "Mecânica Quântica - Fundamentos",
+      title: "React.js - Fundamentos",
       tutor: "Prof. Carlos Santos",
       participants: ["CS", "RL", "MO"],
       isLive: false
     },
     {
       id: 3,
-      title: "Reações de Substituição",
+      title: "Design Patterns em Python",
       tutor: "Dra. Maria Oliveira",
       participants: ["MO", "AS", "JP", "IC", "RL"],
       isLive: false
@@ -55,35 +56,35 @@ const MeusCursos = () => {
   const timelineEvents = [
     {
       id: 1,
-      icon: "📝",
+      icon: "💻",
       date: "20/12",
       time: "23:59",
-      title: "Entrega do Projeto Final - Cálculo",
-      description: "Prazo final para entrega do projeto de cálculo diferencial"
+      title: "Entrega do Projeto Final - Sistema Web",
+      description: "Prazo final para entrega do projeto de desenvolvimento web"
     },
     {
       id: 2,
       icon: "📊",
       date: "18/12",
       time: "14:00",
-      title: "Prova - Física Quântica",
-      description: "Avaliação sobre os fundamentos da física quântica"
+      title: "Prova - Estruturas de Dados",
+      description: "Avaliação sobre algoritmos e estruturas de dados"
     },
     {
       id: 3,
       icon: "🎥",
       date: "15/12",
       time: "15:30",
-      title: "Aula ao Vivo - Química Orgânica",
-      description: "Discussão sobre reações de substituição nucleofílica"
+      title: "Aula ao Vivo - Engenharia de Software",
+      description: "Discussão sobre metodologias ágeis e design patterns"
     },
     {
       id: 4,
-      icon: "🔬",
+      icon: "🔧",
       date: "12/12",
       time: "10:00",
-      title: "Workshop - Métodos Numéricos",
-      description: "Workshop prático sobre aplicação de métodos numéricos"
+      title: "Workshop - DevOps e CI/CD",
+      description: "Workshop prático sobre integração e entrega contínua"
     }
   ];
 
@@ -99,7 +100,7 @@ const MeusCursos = () => {
               Meus Cursos
             </h1>
             <p className="text-lg text-tutoriando-text-light font-inter max-w-2xl mx-auto">
-              Acompanhe seu progresso e mantenha-se atualizado com suas atividades acadêmicas
+              Acompanhe seu progresso em tecnologia e mantenha-se atualizado com suas atividades de programação
             </p>
           </div>
 
@@ -120,7 +121,7 @@ const MeusCursos = () => {
                 <Clock className="w-8 h-8 text-tutoriando-blue-dark mr-3" />
                 <div>
                   <p className="text-2xl font-bold text-tutoriando-text-dark font-inter">127</p>
-                  <p className="text-sm text-tutoriando-text-light font-inter">Horas Estudadas</p>
+                  <p className="text-sm text-tutoriando-text-light font-inter">Horas de Código</p>
                 </div>
               </div>
             </div>
@@ -130,7 +131,7 @@ const MeusCursos = () => {
                 <Users className="w-8 h-8 text-tutoriando-blue-dark mr-3" />
                 <div>
                   <p className="text-2xl font-bold text-tutoriando-text-dark font-inter">8</p>
-                  <p className="text-sm text-tutoriando-text-light font-inter">Tutores</p>
+                  <p className="text-sm text-tutoriando-text-light font-inter">Instrutores</p>
                 </div>
               </div>
             </div>
@@ -140,7 +141,7 @@ const MeusCursos = () => {
                 <Calendar className="w-8 h-8 text-tutoriando-blue-dark mr-3" />
                 <div>
                   <p className="text-2xl font-bold text-tutoriando-text-dark font-inter">5</p>
-                  <p className="text-sm text-tutoriando-text-light font-inter">Eventos esta Semana</p>
+                  <p className="text-sm text-tutoriando-text-light font-inter">Projetos esta Semana</p>
                 </div>
               </div>
             </div>
@@ -161,7 +162,7 @@ const MeusCursos = () => {
           {/* Timeline Section */}
           <section id="timeline" className="mb-16">
             <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-8 font-inter">
-              Timeline dos Cursos
+              Timeline dos Projetos
             </h2>
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
               <div className="space-y-6">
@@ -175,7 +176,7 @@ const MeusCursos = () => {
           {/* Live Classes Section */}
           <section id="aulas-ao-vivo" className="mb-16">
             <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-8 font-inter">
-              Próximas Aulas ao Vivo
+              Próximas Sessões de Código
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {liveClasses.map((liveClass) => (

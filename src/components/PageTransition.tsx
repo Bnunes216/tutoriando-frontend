@@ -22,7 +22,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
       const timer = setTimeout(() => {
         setDisplayLocation(location);
         setIsVisible(true);
-      }, 150);
+      }, 100);
       return () => clearTimeout(timer);
     }
   }, [isVisible, location]);
@@ -35,10 +35,10 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
 
   return (
     <div 
-      className={`transition-all duration-700 ease-out ${
+      className={`transition-opacity duration-500 ease-in-out ${
         isVisible 
-          ? 'opacity-100 translate-y-0 scale-100' 
-          : 'opacity-0 translate-y-6 scale-98'
+          ? 'opacity-100' 
+          : 'opacity-0'
       }`}
     >
       {children}
