@@ -11,7 +11,7 @@ const Home = () => {
     {
       id: 1,
       name: "Dr. Ana Silva",
-      subject: "Matemática",
+      subject: "Ciência da Computação",
       rating: 4.9,
       isOnline: true,
       avatar: "AS",
@@ -20,7 +20,7 @@ const Home = () => {
     {
       id: 2,
       name: "Prof. Carlos Santos",
-      subject: "Física",
+      subject: "Análise e Desenvolvimento",
       rating: 4.8,
       isOnline: false,
       avatar: "CS",
@@ -29,7 +29,7 @@ const Home = () => {
     {
       id: 3,
       name: "Dra. Maria Oliveira",
-      subject: "Química",
+      subject: "Engenharia de Software",
       rating: 4.9,
       isOnline: true,
       avatar: "MO",
@@ -40,22 +40,22 @@ const Home = () => {
   const news = [
     {
       id: 1,
-      title: "Nova Metodologia de Ensino Online",
-      description: "Descubra como nossa nova abordagem está revolucionando o aprendizado digital.",
+      title: "Novas Tecnologias em Desenvolvimento Web",
+      description: "Descubra as últimas tendências em React, Next.js e outras tecnologias modernas.",
       date: "15 de Dezembro, 2024",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     },
     {
       id: 2,
-      title: "Expansão para Novos Cursos",
-      description: "Anunciamos a chegada de novos cursos em áreas como Design e Marketing Digital.",
+      title: "Expansão para Cursos de DevOps e Cloud",
+      description: "Anunciamos novos cursos em AWS, Docker, Kubernetes e práticas de DevOps.",
       date: "12 de Dezembro, 2024",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     },
     {
       id: 3,
-      title: "Parcerias com Universidades",
-      description: "Firmamos parcerias estratégicas com as principais universidades do país.",
+      title: "Parcerias com Empresas de Tecnologia",
+      description: "Firmamos parcerias com as principais empresas tech para oportunidades de estágio.",
       date: "10 de Dezembro, 2024",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     }
@@ -72,15 +72,15 @@ const Home = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 font-inter leading-tight">
-                  Aprenda com os Melhores 
-                  <span className="text-tutoriando-beige"> Tutores</span>
+                  Domine a 
+                  <span className="text-tutoriando-beige"> Tecnologia</span>
                 </h1>
                 <p className="text-xl mb-8 text-gray-200 font-inter">
-                  Conecte-se com tutores especializados e acelere seu aprendizado com aulas personalizadas
+                  Conecte-se com especialistas em programação e tecnologia para acelerar sua carreira no mundo digital
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button className="bg-white text-tutoriando-text-dark hover:bg-gray-100 font-inter text-lg px-8 py-3">
-                    Encontrar Tutor
+                    Encontrar Mentor
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                   <Button 
@@ -94,7 +94,7 @@ const Home = () => {
               
               <div className="flex justify-center">
                 <div className="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm">
-                  <div className="text-8xl">🎓</div>
+                  <div className="text-8xl">💻</div>
                 </div>
               </div>
             </div>
@@ -106,10 +106,10 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-4 font-inter">
-                Por que escolher o Tutoriando?
+                Por que escolher o Tutoriando Tech?
               </h2>
               <p className="text-lg text-tutoriando-text-light font-inter max-w-2xl mx-auto">
-                Oferecemos a melhor experiência de aprendizado personalizado
+                A melhor plataforma para aprender programação e tecnologia com mentores especializados
               </p>
             </div>
             
@@ -119,10 +119,10 @@ const Home = () => {
                   <Search className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-tutoriando-text-dark mb-2 font-inter">
-                  Encontre o Tutor Ideal
+                  Encontre o Mentor Ideal
                 </h3>
                 <p className="text-tutoriando-text-light font-inter">
-                  Sistema inteligente de matching que conecta você ao tutor perfeito para suas necessidades
+                  Sistema inteligente que conecta você ao especialista perfeito na sua área de interesse
                 </p>
               </div>
               
@@ -134,7 +134,7 @@ const Home = () => {
                   Qualidade Garantida
                 </h3>
                 <p className="text-tutoriando-text-light font-inter">
-                  Todos os tutores são avaliados e certificados, garantindo a melhor experiência de aprendizado
+                  Todos os mentores são profissionais experientes do mercado de tecnologia
                 </p>
               </div>
               
@@ -143,10 +143,10 @@ const Home = () => {
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-tutoriando-text-dark mb-2 font-inter">
-                  Comunidade Ativa
+                  Comunidade Tech
                 </h3>
                 <p className="text-tutoriando-text-light font-inter">
-                  Participe de uma comunidade engajada com fóruns, eventos e networking
+                  Participe de uma comunidade ativa de desenvolvedores e profissionais de tecnologia
                 </p>
               </div>
             </div>
@@ -158,10 +158,10 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-4 font-inter">
-                Nossos Melhores Tutores
+                Nossos Melhores Mentores Tech
               </h2>
               <p className="text-lg text-tutoriando-text-light font-inter">
-                Conheça alguns dos profissionais mais qualificados da nossa plataforma
+                Conheça alguns dos profissionais mais qualificados em tecnologia da nossa plataforma
               </p>
             </div>
             
@@ -173,7 +173,7 @@ const Home = () => {
             
             <div className="text-center mt-8">
               <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-dark/90 text-white font-inter">
-                Ver Todos os Tutores
+                Ver Todos os Mentores
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </div>
@@ -185,10 +185,10 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-4 font-inter">
-                Últimas Notícias
+                Últimas do Mundo Tech
               </h2>
               <p className="text-lg text-tutoriando-text-light font-inter">
-                Fique por dentro das novidades e atualizações da plataforma
+                Fique por dentro das novidades e tendências em tecnologia
               </p>
             </div>
             
@@ -211,10 +211,10 @@ const Home = () => {
         <section className="py-16 bg-tutoriando-blue-dark text-white">
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold mb-4 font-inter">
-              Pronto para começar sua jornada de aprendizado?
+              Pronto para acelerar sua carreira em tecnologia?
             </h2>
             <p className="text-xl mb-8 text-gray-200 font-inter">
-              Junte-se a milhares de estudantes que já transformaram seus estudos com nossa plataforma
+              Junte-se a milhares de desenvolvedores que já transformaram suas carreiras com nossa plataforma
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-white text-tutoriando-text-dark hover:bg-gray-100 font-inter text-lg px-8 py-3">

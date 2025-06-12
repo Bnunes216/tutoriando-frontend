@@ -28,16 +28,20 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<{ name: string; email: string } | null>(null);
 
   const login = (email: string, password: string) => {
-    // Simulação de login - extrair nome do email para demonstração
-    const name = email.split('@')[0];
+    // Extrair apenas o primeiro nome do email
+    const emailUsername = email.split('@')[0];
+    const firstName = emailUsername.split('.')[0].split('_')[0].split('-')[0];
+    const capitalizedFirstName = firstName.charAt(0).toUpperCase() + firstName.slice(1);
+    
     setIsAuthenticated(true);
-    setUser({ name: name.charAt(0).toUpperCase() + name.slice(1), email });
+    setUser({ name: capitalizedFirstName, email });
   };
 
   const register = (name: string, email: string, password: string) => {
-    // Simulação de registro - usar nome fornecido
+    // Para registro, usar apenas o primeiro nome fornecido
+    const firstName = name.split(' ')[0];
     setIsAuthenticated(true);
-    setUser({ name, email });
+    setUser({ name: firstName, email });
   };
 
   const logout = () => {

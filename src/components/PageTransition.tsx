@@ -8,23 +8,37 @@ interface PageTransitionProps {
 
 const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [displayLocation, setDisplayLocation] = useState(useLocation());
   const location = useLocation();
 
   useEffect(() => {
-    setIsVisible(false);
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 50);
+    if (location !== displayLocation) {
+      setIsVisible(false);
+    }
+  }, [location, displayLocation]);
 
-    return () => clearTimeout(timer);
-  }, [location.pathname]);
+  useEffect(() => {
+    if (!isVisible) {
+      const timer = setTimeout(() => {
+        setDisplayLocation(location);
+        setIsVisible(true);
+      }, 150);
+      return () => clearTimeout(timer);
+    }
+  }, [isVisible, location]);
+
+  useEffect(() => {
+    if (location === displayLocation) {
+      setIsVisible(true);
+    }
+  }, [location, displayLocation]);
 
   return (
     <div 
-      className={`transition-all duration-500 ease-in-out ${
+      className={`transition-all duration-700 ease-out ${
         isVisible 
-          ? 'opacity-100 translate-y-0' 
-          : 'opacity-0 translate-y-4'
+          ? 'opacity-100 translate-y-0 scale-100' 
+          : 'opacity-0 translate-y-6 scale-98'
       }`}
     >
       {children}
