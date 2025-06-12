@@ -152,81 +152,15 @@ const Register = () => {
         </div>
       </div>
 
-      {/* Seção direita - Ilustração */}
+      {/* Seção direita - Elementos decorativos animados */}
       <div className="flex-1 bg-gradient-to-br from-tutoriando-blue-gradient-start to-tutoriando-blue-gradient-end relative overflow-hidden">
-        {/* Elementos decorativos */}
-        <div className="absolute top-8 left-8 w-16 h-16 border border-white/20 rounded-lg transform rotate-12"></div>
-        <div className="absolute bottom-8 right-8 w-12 h-12 border border-white/20 rounded-lg transform -rotate-12"></div>
-        <div className="absolute top-32 right-16 w-8 h-8 border border-white/20 rounded-lg transform rotate-45"></div>
-        <div className="absolute bottom-32 left-16 w-10 h-10 border border-white/20 rounded-lg transform -rotate-45"></div>
-
-        {/* Ilustração central da coruja */}
-        <div className="flex items-center justify-center h-full">
-          <div className="relative animate-fade-in">
-            <svg 
-              width="518" 
-              height="507" 
-              viewBox="0 0 518 507" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-white"
-            >
-              {/* Corpo principal da coruja */}
-              <ellipse cx="259" cy="350" rx="120" ry="100" fill="currentColor" opacity="0.9"/>
-              
-              {/* Cabeça da coruja */}
-              <circle cx="259" cy="200" r="100" fill="currentColor"/>
-              
-              {/* Tufos das orelhas */}
-              <path d="M180 120 L200 80 L220 120 Z" fill="currentColor"/>
-              <path d="M298 120 L318 80 L338 120 Z" fill="currentColor"/>
-              
-              {/* Olhos grandes */}
-              <circle cx="220" cy="180" r="35" fill="white"/>
-              <circle cx="298" cy="180" r="35" fill="white"/>
-              <circle cx="220" cy="180" r="20" fill="#1E3A8A"/>
-              <circle cx="298" cy="180" r="20" fill="#1E3A8A"/>
-              <circle cx="225" cy="175" r="8" fill="white"/>
-              <circle cx="303" cy="175" r="8" fill="white"/>
-              
-              {/* Bico */}
-              <path d="M259 220 L240 250 L278 250 Z" fill="#F59E0B"/>
-              
-              {/* Capelo de formatura */}
-              <path d="M150 100 L368 100 L350 50 L168 50 Z" fill="currentColor"/>
-              <path d="M350 50 L380 30 L370 80 Z" fill="#F59E0B"/>
-              <circle cx="380" cy="30" r="8" fill="#F59E0B"/>
-              
-              {/* Livro aberto */}
-              <g transform="translate(320, 380)">
-                <rect x="0" y="0" width="80" height="60" rx="4" fill="white" opacity="0.9"/>
-                <rect x="0" y="0" width="40" height="60" rx="4" fill="#F3F4F6"/>
-                <rect x="40" y="0" width="40" height="60" rx="4" fill="white"/>
-                <line x1="5" y1="15" x2="35" y2="15" stroke="#6B7280" strokeWidth="2"/>
-                <line x1="5" y1="25" x2="30" y2="25" stroke="#6B7280" strokeWidth="2"/>
-                <line x1="5" y1="35" x2="35" y2="35" stroke="#6B7280" strokeWidth="2"/>
-                <line x1="45" y1="15" x2="75" y2="15" stroke="#6B7280" strokeWidth="2"/>
-                <line x1="45" y1="25" x2="70" y2="25" stroke="#6B7280" strokeWidth="2"/>
-                <line x1="45" y1="35" x2="75" y2="35" stroke="#6B7280" strokeWidth="2"/>
-              </g>
-              
-              {/* Lápis */}
-              <g transform="translate(420, 350)">
-                <rect x="0" y="0" width="8" height="80" fill="#F59E0B"/>
-                <rect x="0" y="70" width="8" height="10" fill="#8B5CF6"/>
-                <path d="M0 80 L4 90 L8 80 Z" fill="#374151"/>
-              </g>
-              
-              {/* Asas */}
-              <ellipse cx="160" cy="300" rx="40" ry="80" fill="currentColor" opacity="0.8" transform="rotate(-20 160 300)"/>
-              <ellipse cx="358" cy="300" rx="40" ry="80" fill="currentColor" opacity="0.8" transform="rotate(20 358 300)"/>
-              
-              {/* Patas */}
-              <ellipse cx="220" cy="440" rx="15" ry="25" fill="#F59E0B"/>
-              <ellipse cx="298" cy="440" rx="15" ry="25" fill="#F59E0B"/>
-            </svg>
-          </div>
-        </div>
+        {/* Elementos decorativos animados */}
+        <div className="absolute top-8 left-8 w-8 h-8 border border-white/20 rounded-lg transform rotate-12 animate-bounce-slow"></div>
+        <div className="absolute bottom-8 right-8 w-6 h-6 border border-white/20 rounded-lg transform -rotate-12 animate-float-up"></div>
+        <div className="absolute top-32 right-16 w-4 h-4 border border-white/20 rounded-lg transform rotate-45 animate-float-down"></div>
+        <div className="absolute bottom-32 left-16 w-5 h-5 border border-white/20 rounded-lg transform -rotate-45 animate-bounce-slow"></div>
+        <div className="absolute top-1/2 left-1/4 w-6 h-6 border border-white/10 rounded-lg transform rotate-12 animate-float-up"></div>
+        <div className="absolute top-1/3 right-1/3 w-4 h-4 border border-white/15 rounded-lg transform -rotate-12 animate-float-down"></div>
       </div>
     </div>
   );
