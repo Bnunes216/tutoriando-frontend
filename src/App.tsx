@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext";
+import PageTransition from "./components/PageTransition";
 import Home from "./pages/Home";
 import Index from "./pages/Index";
 import LoginPage from "./pages/LoginPage";
@@ -21,15 +22,17 @@ const App = () => (
       <Sonner />
       <AuthProvider>
         <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/register" element={<Index />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/cursos" element={<MeusCursos />} />
-            <Route path="/comunidade" element={<Comunidade />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <PageTransition>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/register" element={<Index />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/cursos" element={<MeusCursos />} />
+              <Route path="/comunidade" element={<Comunidade />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </PageTransition>
         </BrowserRouter>
       </AuthProvider>
     </TooltipProvider>

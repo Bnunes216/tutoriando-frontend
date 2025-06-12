@@ -28,13 +28,14 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [user, setUser] = useState<{ name: string; email: string } | null>(null);
 
   const login = (email: string, password: string) => {
-    // Simulação de login - em produção seria uma chamada para API
+    // Simulação de login - extrair nome do email para demonstração
+    const name = email.split('@')[0];
     setIsAuthenticated(true);
-    setUser({ name: 'Usuário', email });
+    setUser({ name: name.charAt(0).toUpperCase() + name.slice(1), email });
   };
 
   const register = (name: string, email: string, password: string) => {
-    // Simulação de registro - em produção seria uma chamada para API
+    // Simulação de registro - usar nome fornecido
     setIsAuthenticated(true);
     setUser({ name, email });
   };

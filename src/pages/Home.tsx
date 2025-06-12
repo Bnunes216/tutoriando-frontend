@@ -85,7 +85,7 @@ const Home = () => {
                   </Button>
                   <Button 
                     variant="outline" 
-                    className="border-white text-white hover:bg-white hover:text-tutoriando-text-dark font-inter text-lg px-8 py-3"
+                    className="border-white text-black bg-white hover:bg-gray-100 hover:text-black font-inter text-lg px-8 py-3"
                   >
                     Saiba Mais
                   </Button>
@@ -223,7 +223,7 @@ const Home = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-tutoriando-text-dark font-inter text-lg px-8 py-3"
+                className="border-white text-black bg-white hover:bg-gray-100 hover:text-black font-inter text-lg px-8 py-3"
               >
                 Falar com Suporte
               </Button>
