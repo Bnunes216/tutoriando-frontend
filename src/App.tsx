@@ -11,6 +11,7 @@ import Index from "./pages/Index";
 import LoginPage from "./pages/LoginPage";
 import MeusCursos from "./pages/MeusCursos";
 import Comunidade from "./pages/Comunidade";
+import Mentores from "./pages/Mentores";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
               <Route path="/login" element={<LoginPage />} />
               <Route path="/cursos" element={<MeusCursos />} />
               <Route path="/comunidade" element={<Comunidade />} />
+              <Route path="/mentores" element={<Mentores />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

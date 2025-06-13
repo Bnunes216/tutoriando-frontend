@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import TutorCard from '@/components/TutorCard';
@@ -10,12 +12,12 @@ const Home = () => {
   const tutors = [
     {
       id: 1,
-      name: "Dr. Ana Silva",
+      name: "Ana Silva",
       subject: "Ciência da Computação",
       rating: 4.9,
       isOnline: true,
       avatar: "AS",
-      experience: "10 anos"
+      experience: "Estudante"
     },
     {
       id: 2,
@@ -28,12 +30,12 @@ const Home = () => {
     },
     {
       id: 3,
-      name: "Dra. Maria Oliveira",
+      name: "Maria Oliveira",
       subject: "Engenharia de Software",
       rating: 4.9,
       isOnline: true,
       avatar: "MO",
-      experience: "12 anos"
+      experience: "Estudante"
     }
   ];
 
@@ -43,7 +45,7 @@ const Home = () => {
       title: "Novas Tecnologias em Desenvolvimento Web",
       description: "Descubra as últimas tendências em React, Next.js e outras tecnologias modernas.",
       date: "15 de Dezembro, 2024",
-      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+      image: "/lovable-uploads/c99f3156-5444-4fa7-93f0-3973775dc38c.png"
     },
     {
       id: 2,
@@ -57,7 +59,7 @@ const Home = () => {
       title: "Parcerias com Empresas de Tecnologia",
       description: "Firmamos parcerias com as principais empresas tech para oportunidades de estágio.",
       date: "10 de Dezembro, 2024",
-      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+      image: "/lovable-uploads/f4f5a461-b655-4ad3-8b46-c3d0ab2e67e6.png"
     }
   ];
 
@@ -79,10 +81,12 @@ const Home = () => {
                   Conecte-se com especialistas em programação e tecnologia para acelerar sua carreira no mundo digital
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-white text-tutoriando-text-dark hover:bg-gray-100 font-inter text-lg px-8 py-3">
-                    Encontrar Mentor
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Button>
+                  <Link to="/mentores">
+                    <Button className="bg-white text-tutoriando-text-dark hover:bg-gray-100 font-inter text-lg px-8 py-3">
+                      Encontrar Mentor
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </Button>
+                  </Link>
                   <Button 
                     variant="outline" 
                     className="border-white text-black bg-white hover:bg-gray-100 hover:text-black font-inter text-lg px-8 py-3"
@@ -172,10 +176,12 @@ const Home = () => {
             </div>
             
             <div className="text-center mt-8">
-              <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-dark/90 text-white font-inter">
-                Ver Todos os Mentores
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
+              <Link to="/mentores">
+                <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-dark/90 text-white font-inter">
+                  Ver Todos os Mentores
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>

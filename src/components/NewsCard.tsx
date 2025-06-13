@@ -12,11 +12,12 @@ interface NewsCardProps {
 const NewsCard: React.FC<NewsCardProps> = ({ title, description, image, date }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-      <div className="h-48 bg-gradient-to-br from-tutoriando-blue-gradient-start to-tutoriando-blue-gradient-end flex items-center justify-center">
-        <div className="text-white text-center p-4">
-          <div className="text-4xl mb-2">📚</div>
-          <div className="text-sm opacity-90">{image}</div>
-        </div>
+      <div className="h-48 overflow-hidden">
+        <img 
+          src={image} 
+          alt={title}
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+        />
       </div>
       
       <div className="p-6">
