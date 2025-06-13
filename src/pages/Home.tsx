@@ -50,14 +50,14 @@ const Home = () => {
     {
       id: 2,
       title: "Cursos novos saindo ao fim do mes",
-      description: "Anunciamos novos cursos em AWS, Docker, Kubernetes e práticas de DevOps.",
+      description: "Prepare-se para expandir seus conhecimentos com nossos novos cursos que estarão disponíveis em breve.",
       date: "12 de Dezembro, 2024",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     },
     {
       id: 3,
       title: "Lançamento da plataforma oficialmente!",
-      description: "Firmamos parcerias com as principais empresas tech para oportunidades de estágio.",
+      description: "Celebramos o lançamento oficial da nossa plataforma de aprendizado em tecnologia.",
       date: "10 de Dezembro, 2024",
       image: "/lovable-uploads/f4f5a461-b655-4ad3-8b46-c3d0ab2e67e6.png"
     }
@@ -229,12 +229,14 @@ const Home = () => {
                 Começar Agora
                 <BookOpen className="ml-2 w-5 h-5" />
               </Button>
-              <Button 
-                variant="outline" 
-                className="border-white text-black bg-white hover:bg-gray-100 hover:text-black font-inter text-lg px-8 py-3"
-              >
-                Falar com Suporte
-              </Button>
+              <Link to="/comunidade#suporte">
+                <Button 
+                  variant="outline" 
+                  className="border-white text-black bg-white hover:bg-gray-100 hover:text-black font-inter text-lg px-8 py-3"
+                >
+                  Falar com Suporte
+                </Button>
+              </Link>
             </div>
           </div>
         </section>

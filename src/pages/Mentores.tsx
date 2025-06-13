@@ -145,7 +145,7 @@ const Mentores = () => {
                 <div className="w-16 h-16 bg-tutoriando-blue-dark rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-tutoriando-text-dark mb-2 font-inter">50+</h3>
+                <h3 className="text-2xl font-bold text-tutoriando-text-dark mb-2 font-inter">10+</h3>
                 <p className="text-tutoriando-text-light font-inter">Mentores Ativos</p>
               </div>
               
@@ -161,7 +161,7 @@ const Mentores = () => {
                 <div className="w-16 h-16 bg-tutoriando-blue-dark rounded-full flex items-center justify-center mx-auto mb-4">
                   <Code className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-tutoriando-text-dark mb-2 font-inter">15+</h3>
+                <h3 className="text-2xl font-bold text-tutoriando-text-dark mb-2 font-inter">10+</h3>
                 <p className="text-tutoriando-text-light font-inter">Tecnologias</p>
               </div>
               
@@ -169,7 +169,7 @@ const Mentores = () => {
                 <div className="w-16 h-16 bg-tutoriando-blue-dark rounded-full flex items-center justify-center mx-auto mb-4">
                   <Database className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-tutoriando-text-dark mb-2 font-inter">1000+</h3>
+                <h3 className="text-2xl font-bold text-tutoriando-text-dark mb-2 font-inter">100+</h3>
                 <p className="text-tutoriando-text-light font-inter">Horas de Mentoria</p>
               </div>
             </div>
