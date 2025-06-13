@@ -21,12 +21,12 @@ const Home = () => {
     },
     {
       id: 2,
-      name: "Prof. Carlos Santos",
+      name: "Carlos Santos",
       subject: "Análise e Desenvolvimento",
       rating: 4.8,
       isOnline: false,
       avatar: "CS",
-      experience: "8 anos"
+      experience: "Professor"
     },
     {
       id: 3,
@@ -49,14 +49,14 @@ const Home = () => {
     },
     {
       id: 2,
-      title: "Expansão para Cursos de DevOps e Cloud",
+      title: "Cursos novos saindo ao fim do mes",
       description: "Anunciamos novos cursos em AWS, Docker, Kubernetes e práticas de DevOps.",
       date: "12 de Dezembro, 2024",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     },
     {
       id: 3,
-      title: "Parcerias com Empresas de Tecnologia",
+      title: "Lançamento da plataforma oficialmente!",
       description: "Firmamos parcerias com as principais empresas tech para oportunidades de estágio.",
       date: "10 de Dezembro, 2024",
       image: "/lovable-uploads/f4f5a461-b655-4ad3-8b46-c3d0ab2e67e6.png"
@@ -87,12 +87,14 @@ const Home = () => {
                       <ArrowRight className="ml-2 w-5 h-5" />
                     </Button>
                   </Link>
-                  <Button 
-                    variant="outline" 
-                    className="border-white text-black bg-white hover:bg-gray-100 hover:text-black font-inter text-lg px-8 py-3"
-                  >
-                    Saiba Mais
-                  </Button>
+                  <a href="#features">
+                    <Button 
+                      variant="outline" 
+                      className="border-white text-black bg-white hover:bg-gray-100 hover:text-black font-inter text-lg px-8 py-3"
+                    >
+                      Saiba Mais
+                    </Button>
+                  </a>
                 </div>
               </div>
               
@@ -106,11 +108,11 @@ const Home = () => {
         </section>
 
         {/* Features Section */}
-        <section className="py-16">
+        <section id="features" className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-4 font-inter">
-                Por que escolher o Tutoriando Tech?
+                Por que escolher o Tutoriando?
               </h2>
               <p className="text-lg text-tutoriando-text-light font-inter max-w-2xl mx-auto">
                 A melhor plataforma para aprender programação e tecnologia com mentores especializados
@@ -162,7 +164,7 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-4 font-inter">
-                Nossos Melhores Mentores Tech
+                Nossos Melhores Mentores
               </h2>
               <p className="text-lg text-tutoriando-text-light font-inter">
                 Conheça alguns dos profissionais mais qualificados em tecnologia da nossa plataforma
