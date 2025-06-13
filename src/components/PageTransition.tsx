@@ -7,7 +7,7 @@ interface PageTransitionProps {
 }
 
 const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [displayLocation, setDisplayLocation] = useState(useLocation());
   const location = useLocation();
 
@@ -22,7 +22,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
       const timer = setTimeout(() => {
         setDisplayLocation(location);
         setIsVisible(true);
-      }, 100);
+      }, 150);
       return () => clearTimeout(timer);
     }
   }, [isVisible, location]);
@@ -35,10 +35,10 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
 
   return (
     <div 
-      className={`transition-opacity duration-500 ease-in-out ${
+      className={`transition-all duration-300 ease-in-out ${
         isVisible 
-          ? 'opacity-100' 
-          : 'opacity-0'
+          ? 'opacity-100 translate-y-0' 
+          : 'opacity-95 translate-y-1'
       }`}
     >
       {children}
