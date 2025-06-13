@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import TutorCard from '@/components/TutorCard';
@@ -23,12 +24,12 @@ const Mentores = () => {
     },
     {
       id: 2,
-      name: "Prof. Carlos Santos",
+      name: "Carlos Santos",
       subject: "Análise e Desenvolvimento",
       rating: 4.8,
       isOnline: false,
       avatar: "CS",
-      experience: "8 anos"
+      experience: "Estudante"
     },
     {
       id: 3,
@@ -46,7 +47,7 @@ const Mentores = () => {
       rating: 4.7,
       isOnline: true,
       avatar: "JP",
-      experience: "5 anos"
+      experience: "Estudante"
     },
     {
       id: 5,
@@ -55,7 +56,7 @@ const Mentores = () => {
       rating: 4.8,
       isOnline: false,
       avatar: "CS",
-      experience: "6 anos"
+      experience: "Estudante"
     },
     {
       id: 6,
@@ -64,7 +65,7 @@ const Mentores = () => {
       rating: 4.6,
       isOnline: true,
       avatar: "RL",
-      experience: "7 anos"
+      experience: "Estudante"
     },
     {
       id: 7,
@@ -73,7 +74,7 @@ const Mentores = () => {
       rating: 4.9,
       isOnline: true,
       avatar: "BC",
-      experience: "4 anos"
+      experience: "Estudante"
     },
     {
       id: 8,
@@ -82,7 +83,7 @@ const Mentores = () => {
       rating: 4.5,
       isOnline: false,
       avatar: "LF",
-      experience: "3 anos"
+      experience: "Estudante"
     }
   ];
 
@@ -106,9 +107,11 @@ const Mentores = () => {
 
   return (
     <div className="min-h-screen bg-tutoriando-beige">
-      <Header />
+      <div className="sticky top-0 z-50">
+        <Header />
+      </div>
       
-      <main className="pt-20">
+      <main className="pt-4">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-br from-tutoriando-blue-dark to-tutoriando-blue-gradient-end text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -244,9 +247,11 @@ const Mentores = () => {
             <p className="text-xl mb-8 text-gray-200 font-inter">
               Entre em contato conosco e ajudaremos você a encontrar o profissional perfeito
             </p>
-            <Button className="bg-white text-tutoriando-text-dark hover:bg-gray-100 font-inter text-lg px-8 py-3">
-              Falar com Suporte
-            </Button>
+            <Link to="/suporte">
+              <Button className="bg-white text-tutoriando-text-dark hover:bg-gray-100 font-inter text-lg px-8 py-3">
+                Falar com Suporte
+              </Button>
+            </Link>
           </div>
         </section>
       </main>
