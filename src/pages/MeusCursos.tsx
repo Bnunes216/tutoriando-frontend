@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -17,7 +18,7 @@ const MeusCursos = () => {
       id: 1,
       title: "Estruturas de Dados e Algoritmos",
       category: "Ciência da Computação",
-      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+      image: "/lovable-uploads/a3dc2dc5-29a8-464a-9882-9b5decd045f4.png"
     },
     {
       id: 2,
