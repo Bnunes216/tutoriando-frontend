@@ -1,11 +1,13 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ForumCard from '@/components/ForumCard';
 import RankingCard from '@/components/RankingCard';
 import SupportSection from '@/components/SupportSection';
 import { MessageSquare, Trophy, HelpCircle } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Comunidade = () => {
   const forumPosts = [
@@ -130,6 +132,15 @@ const Comunidade = () => {
             </div>
             
             <SupportSection />
+            
+            {/* Contact Support Button */}
+            <div className="mt-6 text-center">
+              <Link to="/suporte">
+                <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-gradient-end text-white font-inter px-8 py-3">
+                  Entrar em Contato com Suporte
+                </Button>
+              </Link>
+            </div>
           </section>
         </div>
       </main>

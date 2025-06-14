@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Search } from 'lucide-react';
 
@@ -76,13 +75,6 @@ const SupportSection = () => {
             </Accordion>
           </CardContent>
         </Card>
-
-        {/* Contact Support Button */}
-        <div className="mt-6 text-center">
-          <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-gradient-end text-white font-inter px-8 py-3">
-            Entrar em Contato com Suporte
-          </Button>
-        </div>
       </div>
       
       {/* Support Illustration */}
