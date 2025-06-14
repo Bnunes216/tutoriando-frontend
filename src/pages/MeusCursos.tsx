@@ -56,7 +56,7 @@ const MeusCursos = () => {
       id: 4,
       title: "React.js Completo",
       category: "Frontend",
-      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+      image: "/lovable-uploads/2a81fe6d-e1be-4a9a-a337-bc4e068e96c3.png"
     },
     {
       id: 5,
