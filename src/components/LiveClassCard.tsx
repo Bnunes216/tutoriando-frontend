@@ -1,17 +1,19 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 interface LiveClassCardProps {
+  id?: number;
   title: string;
   tutor: string;
   participants: string[];
   isLive: boolean;
 }
 
-const LiveClassCard = ({ title, tutor, participants, isLive }: LiveClassCardProps) => {
+const LiveClassCard = ({ id = 1, title, tutor, participants, isLive }: LiveClassCardProps) => {
   return (
     <Card className="hover:shadow-lg transition-shadow duration-300">
       <CardContent className="p-6">
@@ -52,9 +54,11 @@ const LiveClassCard = ({ title, tutor, participants, isLive }: LiveClassCardProp
             </div>
           </div>
           
-          <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-gradient-end text-white font-inter">
-            Participar
-          </Button>
+          <Link to={`/aula/${id}`}>
+            <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-gradient-end text-white font-inter">
+              Participar
+            </Button>
+          </Link>
         </div>
       </CardContent>
     </Card>

@@ -1,9 +1,11 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Star, Clock } from 'lucide-react';
 
 interface TutorCardProps {
+  id?: number;
   name: string;
   subject: string;
   rating: number;
@@ -13,6 +15,7 @@ interface TutorCardProps {
 }
 
 const TutorCard: React.FC<TutorCardProps> = ({ 
+  id = 1,
   name, 
   subject, 
   rating, 
@@ -55,9 +58,11 @@ const TutorCard: React.FC<TutorCardProps> = ({
         </span>
       </div>
       
-      <Button className="w-full bg-tutoriando-blue-dark hover:bg-tutoriando-blue-gradient-end text-white font-inter">
-        Ver Perfil
-      </Button>
+      <Link to={`/tutor/${id}`}>
+        <Button className="w-full bg-tutoriando-blue-dark hover:bg-tutoriando-blue-gradient-end text-white font-inter">
+          Ver Perfil
+        </Button>
+      </Link>
     </div>
   );
 };
