@@ -45,7 +45,7 @@ const Home = () => {
       title: "Novas Tecnologias em Desenvolvimento Web",
       description: "Descubra as últimas tendências em React, Next.js e outras tecnologias modernas.",
       date: "15 de Dezembro, 2024",
-      image: "/lovable-uploads/c99f3156-5444-4fa7-93f0-3973775dc38c.png"
+      image: "/lovable-uploads/9e2153a8-80bf-408c-ad89-aaf3298bb5ac.png"
     },
     {
       id: 2,
