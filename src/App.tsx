@@ -14,9 +14,7 @@ import Comunidade from "./pages/Comunidade";
 import Mentores from "./pages/Mentores";
 import Suporte from "./pages/Suporte";
 import PerfilTutor from "./pages/PerfilTutor";
-import AulaAoV
-
-ivo from "./pages/AulaAoVivo";
+import AulaAoVivo from "./pages/AulaAoVivo";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
