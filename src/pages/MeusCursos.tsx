@@ -62,7 +62,7 @@ const MeusCursos = () => {
       id: 5,
       title: "Node.js e Express",
       category: "Backend",
-      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+      image: "/lovable-uploads/9558cf66-f6f4-4ba2-a5c1-c9d92a631a79.png"
     },
     {
       id: 6,
