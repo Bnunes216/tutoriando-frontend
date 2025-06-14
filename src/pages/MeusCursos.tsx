@@ -68,7 +68,7 @@ const MeusCursos = () => {
       id: 6,
       title: "Banco de Dados MySQL",
       category: "Database",
-      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+      image: "/lovable-uploads/c7cf7ce9-b215-403e-995f-560876270286.png"
     }
   ];
 
