@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -44,7 +45,7 @@ const MeusCursos = () => {
       id: 2,
       title: "Python para Iniciantes",
       category: "Linguagens de Programação",
-      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+      image: "/lovable-uploads/48519ffb-a8cb-4b2e-ada7-8770bdb1ffed.png"
     },
     {
       id: 3,
