@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -59,7 +58,7 @@ const Home = () => {
       title: "Lançamento da plataforma oficialmente!",
       description: "Celebramos o lançamento oficial da nossa plataforma de aprendizado em tecnologia.",
       date: "10 de Dezembro, 2024",
-      image: "/lovable-uploads/f4f5a461-b655-4ad3-8b46-c3d0ab2e67e6.png"
+      image: "/lovable-uploads/9cbafb13-3c54-496f-b75a-dd0ae3854044.png"
     }
   ];
 
