@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -39,7 +38,7 @@ const MeusCursos = () => {
       id: 1,
       title: "Introdução à Programação",
       category: "Fundamentos",
-      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+      image: "/lovable-uploads/8427182f-2e0f-4e44-b801-3d37c91c1e52.png"
     },
     {
       id: 2,
