@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -7,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Input } from '@/components/ui/input';
-import { Mic, MicOff, Video, VideoOff, Users, MessageSquare, Settings, Phone } from 'lucide-react';
+import { Mic, MicOff, Video, VideoOff, Users, MessageSquare, Settings, Phone, Clock } from 'lucide-react';
 
 const AulaAoVivo = () => {
   const { id } = useParams();
