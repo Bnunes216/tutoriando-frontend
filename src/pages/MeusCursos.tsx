@@ -29,7 +29,7 @@ const MeusCursos = () => {
       id: 3,
       title: "Engenharia de Software",
       category: "Engenharia da Computação",
-      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+      image: "/lovable-uploads/8cb58e97-171a-4e4b-9f92-7b9015936d1b.png"
     }
   ];
 
