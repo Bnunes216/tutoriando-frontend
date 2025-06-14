@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -51,7 +50,7 @@ const MeusCursos = () => {
       id: 3,
       title: "JavaScript Moderno",
       category: "Desenvolvimento Web",
-      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+      image: "/lovable-uploads/1ce7b675-94a9-475d-a02b-64564aa83a4e.png"
     },
     {
       id: 4,
