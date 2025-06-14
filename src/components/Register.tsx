@@ -154,13 +154,16 @@ const Register = () => {
 
       {/* Seção direita - Elementos decorativos animados */}
       <div className="flex-1 bg-gradient-to-br from-tutoriando-blue-gradient-start to-tutoriando-blue-gradient-end relative overflow-hidden">
-        {/* Elementos decorativos animados */}
-        <div className="absolute top-8 left-8 w-8 h-8 border border-white/20 rounded-lg transform rotate-12 animate-bounce-slow"></div>
-        <div className="absolute bottom-8 right-8 w-6 h-6 border border-white/20 rounded-lg transform -rotate-12 animate-float-up"></div>
-        <div className="absolute top-32 right-16 w-4 h-4 border border-white/20 rounded-lg transform rotate-45 animate-float-down"></div>
-        <div className="absolute bottom-32 left-16 w-5 h-5 border border-white/20 rounded-lg transform -rotate-45 animate-bounce-slow"></div>
-        <div className="absolute top-1/2 left-1/4 w-6 h-6 border border-white/10 rounded-lg transform rotate-12 animate-float-up"></div>
-        <div className="absolute top-1/3 right-1/3 w-4 h-4 border border-white/15 rounded-lg transform -rotate-12 animate-float-down"></div>
+        {/* Elementos decorativos animados - maiores e mais visíveis */}
+        <div className="absolute top-8 left-8 w-16 h-16 border-2 border-white/30 rounded-lg transform rotate-12 animate-bounce-slow"></div>
+        <div className="absolute bottom-8 right-8 w-12 h-12 border-2 border-white/30 rounded-lg transform -rotate-12 animate-float-up"></div>
+        <div className="absolute top-32 right-16 w-10 h-10 border-2 border-white/25 rounded-lg transform rotate-45 animate-float-down"></div>
+        <div className="absolute bottom-32 left-16 w-14 h-14 border-2 border-white/35 rounded-lg transform -rotate-45 animate-bounce-slow"></div>
+        <div className="absolute top-1/2 left-1/4 w-12 h-12 border-2 border-white/20 rounded-lg transform rotate-12 animate-float-up"></div>
+        <div className="absolute top-1/3 right-1/3 w-8 h-8 border-2 border-white/25 rounded-lg transform -rotate-12 animate-float-down"></div>
+        <div className="absolute top-20 left-1/2 w-6 h-6 border border-white/20 rounded-lg transform rotate-30 animate-pulse"></div>
+        <div className="absolute bottom-20 left-1/3 w-10 h-10 border-2 border-white/30 rounded-lg transform -rotate-30 animate-bounce-slow"></div>
+        <div className="absolute top-2/3 right-8 w-8 h-8 border border-white/25 rounded-lg transform rotate-60 animate-float-up"></div>
       </div>
     </div>
   );
