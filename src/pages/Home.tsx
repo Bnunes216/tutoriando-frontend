@@ -52,7 +52,7 @@ const Home = () => {
       title: "Cursos novos saindo ao fim do mes",
       description: "Prepare-se para expandir seus conhecimentos com nossos novos cursos que estarão disponíveis em breve.",
       date: "12 de Dezembro, 2024",
-      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+      image: "/lovable-uploads/cbfbcdad-a7d5-43f0-aac0-5494cb159dd4.png"
     },
     {
       id: 3,
