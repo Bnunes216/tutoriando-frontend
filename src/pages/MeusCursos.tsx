@@ -6,8 +6,13 @@ import CourseCard from '@/components/CourseCard';
 import LiveClassCard from '@/components/LiveClassCard';
 import TimelineEvent from '@/components/TimelineEvent';
 import { Calendar, Clock, Users, BookOpen } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import { useAuth } from '@/contexts/AuthContext';
 
 const MeusCursos = () => {
+  const { isAuthenticated } = useAuth();
+
   const courses = [
     {
       id: 1,
@@ -25,6 +30,45 @@ const MeusCursos = () => {
       id: 3,
       title: "Engenharia de Software",
       category: "Engenharia da Computação",
+      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+    }
+  ];
+
+  const availableCourses = [
+    {
+      id: 1,
+      title: "Introdução à Programação",
+      category: "Fundamentos",
+      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+    },
+    {
+      id: 2,
+      title: "Python para Iniciantes",
+      category: "Linguagens de Programação",
+      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+    },
+    {
+      id: 3,
+      title: "JavaScript Moderno",
+      category: "Desenvolvimento Web",
+      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+    },
+    {
+      id: 4,
+      title: "React.js Completo",
+      category: "Frontend",
+      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+    },
+    {
+      id: 5,
+      title: "Node.js e Express",
+      category: "Backend",
+      image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
+    },
+    {
+      id: 6,
+      title: "Banco de Dados MySQL",
+      category: "Database",
       image: "/lovable-uploads/cde9d2ba-bedf-4b27-b89c-7e78cc6ded56.png"
     }
   ];
@@ -87,6 +131,69 @@ const MeusCursos = () => {
       description: "Workshop prático sobre integração e entrega contínua"
     }
   ];
+
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-tutoriando-beige">
+        <Header />
+        
+        <main className="pt-20 pb-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Page Header for Non-Authenticated */}
+            <div className="text-center mb-12">
+              <h1 className="text-4xl font-bold text-tutoriando-text-dark mb-4 font-inter">
+                Cursos Disponíveis
+              </h1>
+              <p className="text-lg text-tutoriando-text-light font-inter max-w-2xl mx-auto mb-8">
+                Descubra nossa seleção de cursos de tecnologia e programação. Faça login para começar sua jornada de aprendizado!
+              </p>
+              <div className="flex gap-4 justify-center">
+                <Link to="/login">
+                  <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-gradient-end text-white font-inter">
+                    Fazer Login
+                  </Button>
+                </Link>
+                <Link to="/register">
+                  <Button variant="outline" className="border-tutoriando-blue-dark text-tutoriando-blue-dark hover:bg-tutoriando-blue-dark hover:text-white font-inter">
+                    Registrar-se
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Available Courses Section */}
+            <section className="mb-16">
+              <h2 className="text-3xl font-bold text-tutoriando-text-dark mb-8 font-inter">
+                Todos os Cursos
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {availableCourses.map((course) => (
+                  <CourseCard key={course.id} {...course} />
+                ))}
+              </div>
+            </section>
+
+            {/* Call to Action */}
+            <div className="text-center bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+              <h3 className="text-2xl font-bold text-tutoriando-text-dark mb-4 font-inter">
+                Pronto para começar?
+              </h3>
+              <p className="text-tutoriando-text-light font-inter mb-6">
+                Crie sua conta gratuitamente e tenha acesso a todos os cursos, aulas ao vivo e uma comunidade de desenvolvedores.
+              </p>
+              <Link to="/register">
+                <Button className="bg-tutoriando-blue-dark hover:bg-tutoriando-blue-gradient-end text-white font-inter px-8 py-3">
+                  Começar Agora
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </main>
+
+        <Footer />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-tutoriando-beige">
