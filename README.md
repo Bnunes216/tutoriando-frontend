@@ -1,73 +1,81 @@
-# Welcome to your Lovable project
+<h1 align="center" style="font-weight: bold;">Tutoriando</h1>
 
-## Project info
+<p align="center">
+ <a href="#projeto">Projeto</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#instruções">Instruções</a> •
+ <a href="#devs">Devs</a> •
+ <a href="#licença">Licença</a>
+</p>
 
-**URL**: https://lovable.dev/projects/8f550421-86a0-4b53-abd7-539fee3a242a
+<p align="center">
+    <b>Conheça a plataforma de ensino mais completa para sua docência! 🎓📖</b>
+</p>
 
-## How can I edit this code?
+<p align="center">
+     <a href="https://bnunes216.github.io/Blog-Star_Wars/">📱 Visualize o projeto</a>
+</p>
 
-There are several ways of editing your application.
+<h2 id="layout">🎨 Layout</h2>
 
-**Use Lovable**
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/f127f0b0-bb5d-4de0-a64d-e7a9b10ea8b8" alt="Image" width="400px">
+    <img src="https://github.com/user-attachments/assets/7cc31226-73c9-4e83-a625-2a8e25f5202c" alt="Image" width="400px">
+    <img src="https://github.com/user-attachments/assets/6581574c-6c80-4b0c-b6cc-2acbe16f75bf" alt="Image" width="400px">
+    <img src="https://github.com/user-attachments/assets/2a3ff222-9e45-4e6d-8be4-f6d4771f1c91" alt="Image" width="400px">
+</p>
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8f550421-86a0-4b53-abd7-539fee3a242a) and start prompting.
+<h2 id="projeto">💻 Projeto</h2>
 
-Changes made via Lovable will be committed automatically to this repo.
+Projeto de desenvolvimento de um website para venda de hamburgueres e sobremesas geladas. Conheça nosso menu saboroso, além de algumas informações bem legais sobre a franquia. O website foi desenvolvido em tecnologias de HTML5 e CSS, além de Javascript para algumas animações presentes na mesma! <br/>
 
-**Use your preferred IDE**
+<h2 id="tecnologias">🌐 Tecnologias</h2>
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- O projeto foi desenvolvido utilizando as seguintes tecnologias: 
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+  <img align ="center" alt="javascript" src= "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img align ="center" alt="HTML" src= "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img align ="center" alt="Css" src= "https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" />
 
-Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+<h2 id="instruções">🚀 Instruções </h2>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+<h3>Clonando o repositório</h3>
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+- Como clonar seu projeto
+```bash
+git clone https://github.com/Bnunes216/Blog-Star_Wars.git
 ```
 
-**Edit a file directly in GitHub**
+<h3>Iniciando</h3>
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Como iniciar seu projeto
+```bash
+cd Blog-Star-Wars
+code .
+```
 
-**Use GitHub Codespaces**
+- Ou caso esteja usando o VS Code, instale a extensão "Live Server". Após a instalação, clique com o botão direito do mouse no arquivo "index.html" e escolha a opção "Open With Live Server".
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+<h2 id="devs">🤝 Devs</h2>
 
-## What technologies are used for this project?
+Um agradecimento especial a todas as pessoas que contribuíram para este projeto.
 
-This project is built with:
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Bnunes216?tab=overview&from=2022-12-01&to=2022-12-31">
+        <img src="https://avatars.githubusercontent.com/u/106674371?s=400&u=fca717848efb540d9755d861909f973c611995f3&v=4" width="100px;" alt="Fernanda Kipper Profile Picture"/><br>
+        <sub>
+          <p>Bruno Henrique</p>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+<h2 id="licença">📝 Licença</h2>
 
-## How can I deploy this project?
+Esse projeto esta sobre direitos do MIT.
 
-Simply open [Lovable](https://lovable.dev/projects/8f550421-86a0-4b53-abd7-539fee3a242a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Para mais conhecimentos sobre <a href="https://github.com/Bnunes216/Blog-Star_Wars/blob/main/LICENCE">clique aqui</a>
