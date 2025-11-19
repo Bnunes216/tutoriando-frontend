@@ -21,8 +21,8 @@
 <p align="center">
     <img src="https://github.com/user-attachments/assets/f127f0b0-bb5d-4de0-a64d-e7a9b10ea8b8" alt="Image" width="400px">
     <img src="https://github.com/user-attachments/assets/7cc31226-73c9-4e83-a625-2a8e25f5202c" alt="Image" width="400px">
-    <img src="https://github.com/user-attachments/assets/6581574c-6c80-4b0c-b6cc-2acbe16f75bf" alt="Image" width="400px">
-    <img src="https://github.com/user-attachments/assets/2a3ff222-9e45-4e6d-8be4-f6d4771f1c91" alt="Image" width="400px">
+    <img src="https://github.com/user-attachments/assets/090a32f3-06c2-41c7-87fc-3917d09763c0" alt="Image" width="400px">
+    <img src="https://github.com/user-attachments/assets/2d92ce69-429e-460d-b91a-d4710a10bb1f" alt="Image" width="400px">
 </p>
 
 <h2 id="projeto">💻 Projeto</h2>
