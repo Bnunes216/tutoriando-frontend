@@ -78,4 +78,4 @@ Um agradecimento especial a todas as pessoas que contribuíram para este projeto
 
 Esse projeto esta sobre direitos do MIT.
 
-Para mais conhecimentos sobre <a href="https://github.com/Bnunes216/Blog-Star_Wars/blob/main/LICENCE">clique aqui</a>
+Para mais conhecimentos sobre <a href="https://github.com/Bnunes216/tutoriando-frontend/blob/main/LICENSE">clique aqui</a>
