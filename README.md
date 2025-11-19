@@ -44,14 +44,14 @@ Desenvolvimento de um ambiente virtual de aprendizagem focado na disponibilizaç
 
 - Como clonar seu projeto
 ```bash
-git clone https://github.com/Bnunes216/Blog-Star_Wars.git
+git clone https://github.com/Bnunes216/tutoriando-frontend.git
 ```
 
 <h3>Iniciando</h3>
 
 - Como iniciar seu projeto
 ```bash
-cd Blog-Star-Wars
+cd tutoriando-frontend
 code .
 ```
 
