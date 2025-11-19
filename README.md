@@ -27,15 +27,15 @@
 
 <h2 id="projeto">💻 Projeto</h2>
 
-Projeto de desenvolvimento de um website para venda de hamburgueres e sobremesas geladas. Conheça nosso menu saboroso, além de algumas informações bem legais sobre a franquia. O website foi desenvolvido em tecnologias de HTML5 e CSS, além de Javascript para algumas animações presentes na mesma! <br/>
+Desenvolvimento de um ambiente virtual de aprendizagem focado na disponibilização de cursos e mentorias acadêmicas da instituição. A plataforma visa facilitar o acesso dos docentes a tutores qualificados e materiais complementares. O projeto foi estruturado com React e Typescript, aplicando Tailwind para estilização. <br/>
 
 <h2 id="tecnologias">🌐 Tecnologias</h2>
 
 - O projeto foi desenvolvido utilizando as seguintes tecnologias: 
 
-  <img align ="center" alt="javascript" src= "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img align ="center" alt="HTML" src= "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img align ="center" alt="Css" src= "https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" />
+  <img align="center" alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img align="center" alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img align="center" alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 
 
 <h2 id="instruções">🚀 Instruções </h2>
